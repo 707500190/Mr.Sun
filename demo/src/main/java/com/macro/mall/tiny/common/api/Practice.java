@@ -14,7 +14,7 @@ public class Practice {
 
         System.out.println(emuPractice.values()[1].getCode());
        // int a =  pmsBrandService.createBrand(new PmsBrand());
-        PmsBrandService pmsBrandService  = new testImpl();
+      //
        // pmsBrandService.getBrand();
     }
 }

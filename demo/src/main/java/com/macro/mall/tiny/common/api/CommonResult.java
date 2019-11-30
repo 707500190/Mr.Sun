@@ -23,7 +23,7 @@ public class CommonResult<T> {
      *
      * @param data 获取的数据
      */
-    public static <T> CommonResult<T> success(T data) {
+    public static <T> CommonResult<T>  success(T data) {
         return new CommonResult<T>(ResultCode.SUCCESS.getCode(), ResultCode.SUCCESS.getMessage(), data);
     }
 

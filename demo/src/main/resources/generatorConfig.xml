@@ -38,8 +38,33 @@
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.macro.mall.tiny.mbg.mapper"
                              targetProject="E:\Mr.Sun\demo\src\main\java"/>
         <!--生成全部表tableName设为%-->
+
         <table tableName="pms_brand">
-            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        <generatedKey identity="true" sqlStatement="MySql" column="id"/>
+         </table>
+        <!--后台用户表-->
+        <table tableName="ums_admin">
+        <generatedKey identity="true" sqlStatement="MySql" column="id"/>
+        </table>
+        <!--后台用户角色表-->
+        <table tableName="ums_role">
+        <generatedKey identity="true" sqlStatement="MySql" column="id"/>
+        </table>
+        <!--后台用户权限表-->
+        <table tableName="ums_permission">
+        <generatedKey identity="true" sqlStatement="MySql" column="id"/>
+        </table>
+
+        <table tableName="ums_admin_role_relation">
+        <generatedKey identity="true" sqlStatement="MySql" column="id"/>
+        </table>
+
+        <table tableName="ums_role_permission_relation">
+        <generatedKey identity="true" sqlStatement="MySql" column="id"/>
+        </table>
+
+        <table tableName="ums_admin_permission_relation">
+        <generatedKey identity="true" sqlStatement="MySql" column="id"/>
         </table>
     </context>
 </generatorConfiguration>
